@@ -1,10 +1,6 @@
 from django import forms
+from localflavor.us.forms import USZipCodeField
 from .models import Order
-from django.core.validators import EMPTY_VALUES
-from django.forms import ValidationError
-from django.forms.fields import CharField, Field, RegexField, Select
-from django.utils.translation import gettext_lazy as _
-
 
 
 class OrderCreateForm(forms.ModelForm):
